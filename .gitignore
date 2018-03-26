@@ -1,0 +1,8 @@
+node_modules/
+vendor/
+.idea/
+container/*
+!/container/app/php.dockerfile
+!/container/server/nginx.dockerfile
+!/container/server/vhost.conf
+*.iml
