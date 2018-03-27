@@ -35,7 +35,7 @@ final class HotelFactory
             throw HotelException::createWithInvalidArchitecture('Hotel can have no fewer than 0 floors and 0 rooms on each floor');
         }
 
-        if ($floorsNumber > PHP_INT_MAX || $floorsNumber < PHP_INT_MIN) {
+        if ($floorsNumber > PHP_INT_MAX || $roomsNumber > PHP_INT_MAX) {
             throw HotelException::createWithInvalidArchitecture('Hotel can have no more than ' . PHP_INT_MAX . ' floors and ' . PHP_INT_MAX . ' rooms on each floor');
         }
 
